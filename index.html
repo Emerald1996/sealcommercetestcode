@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>sc test</title>
+</head>
+<body>
+    <section id="links">
+        <div class="header">
+            <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+        <div class="link">
+            <nav>
+                <ul class="navLinks">
+                    <li>Home</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Shop</li>
+                    <li>Product</li>
+                    <li>Pages</li>
+                    <li>Contact</li>
+                    <li>Blogs</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger-btn">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </section>
+
+    <section id="main">
+
+        <div class="main-container">
+        <h1>Enjoy This</h1>
+            <h1>Winter Trend</h1>
+            <h5>Discover now latest collection</h5>
+            <a href="https://gempages.net/" target="_blank">shop now</a>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="content-inside">
+            <div class="one" id="blur-one">
+               <p> Gempages Starter plan</p>
+                <button class="btn"  onclick="toggleOne()">check</button>
+            </div>
+
+                <div class="pop-one">
+                <h2>STARTER PLAN</h2>
+                <button class="cancelBtn" onclick="toggleOne()">&times</button>
+                <ul>
+                    <li>Unlimited pages</li>
+                    <li>$15/month</li>
+                    <li>Two pages type(Homepage & Product landing page)</li>
+                    <li>Drag & Drop Editor</li>
+                    <li>Page setting etc</li>
+                </ul>
+            </div>
+            
+            <div class="two" id="blur-two">
+                <p>Gempages Business Plan</p>
+                 <button class="btn" onclick="toggleTwo()">check</button>
+            </div>
+
+            <div class="pop-two">
+                <h2>BUSINESS PLAN</h2>
+                <button class="cancelBtn" onclick="toggleTwo()">&times</button>
+                <ul>
+                    <h3>EVERYTHING IN THE STARTER PLAN, PLUS</h3>
+                    <li>All pages type</li>
+                    <li>$29/month</li>
+                    <li>A/B Testing(2 campaigns)</li>
+                    <li>Custom code</li>
+                    <li>Page setting etc</li>
+                </ul>
+            </div>
+
+
+            <div class="three" id="blur-three">
+              <p>Gempages Advanced Plan</p>
+               <button class="btn" onclick="toggleThree()">check</button>
+            </div>
+
+            <div class="pop-three">
+                <h2>ADVANCED PLAN</h2>
+                <button class="cancelBtn" onclick="toggleThree()">&times</button>
+                <ul>
+                    <h3>EVERYTHING IN THE BUSINESS PLAN, PLUS</h3>
+                    <li>Page scheduling</li>
+                    <li>$59/month</li>
+                    <li>A/B Testing(20 campaigns)</li>
+                    <li>Priority support</li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <div>
+    <section id="footer">
+        <h1>Newsletters</h1>
+        <h5>Sign up to receive information about new products</h5>
+
+        <input type="text" name="email" placeholder="email address">&#8594
+
+        <div class="social-icons">
+            <i class='bx bxl-facebook' style='color:rgba(0,0,0,1)'></i>
+            <i class='bx bxl-twitter' style='color:rgba(0,0,0,1)'></i>
+            <i class='bx bxl-instagram' style='color:rgba(0,0,0,1)'></i>
+        </div>
+    </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(212, 206, 206);
+}
+
+#links{
+  display: flex;
+  min-height: 8vh;
+  background-color: rgba(0, 0, 0, 1);
+  justify-content: space-around;
+  align-items: center;
+}
+.header{
+    padding: 5px;
+    cursor: pointer;
+}
+.header,.logo{
+    width: 20px;
+    height: 20px;
+}
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    
+}
+nav ul li{
+    list-style: none;
+    font-size: 12px;
+    margin: 3px;
+    padding: 5px;
+    color: white;
+}
+nav ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* burgerButton */
+.burger-btn div{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 2em;
+    cursor: pointer;
+}
+.burger-btn{
+    display: none;
+}
+
+#main{ 
+    background: linear-gradient(rgba(0,0,0,0.7),black),url('images/team.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    margin: auto;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin-top: 10px;
+    opacity: 0;
+    
+}
+#main:hover,.main-container:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+
+h1{
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  line-height: 1em;
+}
+h5{
+    font-size: 9px;
+    color: white;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: .2em;
+    cursor: pointer;
+    margin-top: 15px;
+}
+a:hover{
+    background-color: #b3a8a8;
+    font-weight: bold;
+    transform: translateY(-3px);
+    transition: .5s;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+}
+.content-inside{
+    display: flex;
+    padding: 10px; 
+    margin: 10px;
+    height: 200px;
+}
+.btn{
+    margin-left: 41%;
+    cursor: pointer;
+    padding: 10px 18px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 2rem;
+}
+@media screen and (min-width: 800px){
+    .btn{
+        font-weight: bold;
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .pop-one,.pop-two,.pop-three,ul,li{
+        margin: 8px;
+    }
+}
+.btn:hover{
+    transform: translateY(-7px);
+    transition: 1s;
+    background-color: #b3a8a8;
+}
+
+/* popup-overlay */
+.blur-active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.pop-one,.pop-two,.pop-three{
+    position: fixed;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2rem;
+    left: 50%;
+    top: 60%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    z-index: 5;
+}
+h3{
+    margin-top: 15px;
+}
+    
+.pop-active{
+    visibility: visible;
+    opacity: 1;
+    top: 60%;
+}
+.cancelBtn{
+    font-size: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+p{
+    padding: 5px;
+    width: 30%;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    background-color: #fff;
+    margin: 40% 3% 20% 30%;
+    cursor: pointer;
+    text-align: center;
+    border-radius: .2em;
+    position: relative;
+}
+p:hover{
+    background-color: #e9e7e7;
+    transform: translateY(-7px);
+    transition: 1S;
+}
+
+.one{
+    width: 300px;
+    margin: 5px;
+    background: url("images/gempagebuilder.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.two{
+    width: 300px;
+    margin: 5px;
+    background: url('images/gempagebuilder.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.three{
+    width: 300px;
+    margin: 5px;
+    background: url('images/gempagebuilder.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#footer{
+    text-align: center;
+    margin-top: 50px;
+}
+#footer h1{
+  margin-top: 20px;
+  color: black;
+}
+#footer h5{
+    margin-top: 10px;
+    color: black;
+}
+
+#footer>input{
+    width: 30%;
+    margin-top: 15px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.social-icons{
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.bx{
+    border: 1px solid;
+     margin: 5px;   
+}
+
+/* mobile-view */
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .burger-btn{
+        display: block;
+    }
+   .navLinks{
+       position: absolute;
+       color: white;
+       font-weight: bold;
+       font-family: 'Nunito', sans-serif;
+       width: 50%;
+       height: 80vh;
+       right: 0px;
+       top: 8vh;
+       background-color: rgba(0, 0, 0, 0.9);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       transform: translateX(100%);
+       transition: .7s ease-in;
+       z-index: 3;
+   }
+   .active{
+        transform: translateX(0%);
+        
+   }
+   #main{
+       width: 90%;
+       margin-top: -10px;
+   }
+   .main-container{
+       opacity: 1;
+   }
+   .pop-one,.pop-two,.pop-three{
+      left:40%;
+      height: 300px;
+      width: 150px;
+      padding-top: 60px;
+   }
+    .pop-one,.pop-two,.pop-three,ul,li{
+        margin: 5px;
+    }
+   
+    #content{
+        width: 100%;
+    }
+    .content-inside{
+        display: flex;
+        flex-direction: column;
+        
+    }
+ 
+    p{
+        width: 50%;
+        margin: 50% 3% 2% 20%;
+        padding: 20px;
+        font-size: 15px;
+    }
+    .btn{
+        margin-bottom: 30px;
+    }
+    #footer{
+        margin-top: 200%;
+        text-align: center;
+        transform: translate(110%);
+        
+    }
+   #footer,input{
+        width: 30%;    
+    }
+}
